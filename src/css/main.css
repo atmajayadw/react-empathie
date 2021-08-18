@@ -2,7 +2,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@300;400;500&display=swap");
 body {
   font-family: "Noto Sans", sans-serif;
-  background-color: rgba(47, 47, 47, 0.5);
+  background-color: #171717;
+}
+
+#navbar {
+  margin-top: 20px;
+  height: 80px;
+  padding: 0;
+}
+#navbar .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navbar .navbar .links {
+  background: rgba(171, 171, 171, 0.1);
+  width: 700px;
+  height: 80px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#navbar .navbar .links ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+#navbar .navbar .links ul li {
+  list-style-type: none;
+}
+#navbar .navbar .links ul li a {
+  line-height: 100px;
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 /*# sourceMappingURL=main.css.map */
