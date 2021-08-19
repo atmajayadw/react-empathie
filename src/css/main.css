@@ -12,15 +12,18 @@ body {
 }
 #navbar .navbar {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  background: rgba(171, 171, 171, 0.1);
+}
+#navbar .navbar .logo img {
+  width: 120px;
 }
 #navbar .navbar .links {
   background: rgba(171, 171, 171, 0.1);
   width: 700px;
   height: 80px;
   padding: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
 }
@@ -38,6 +41,95 @@ body {
   line-height: 100px;
   text-decoration: none;
   color: whitesmoke;
+}
+#navbar .navbar .sidebar {
+  position: relative;
+  z-index: 2;
+}
+#navbar .navbar .sidebar .links {
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  transform: translate(0, 30);
+}
+#navbar .navbar .sidebar .links.active {
+  width: 50%;
+  visibility: visible;
+  transform: translate(0, 0);
+  opacity: 1;
+}
+#navbar .navbar .sidebar .links ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+  background: #ababab;
+  height: 100vh;
+}
+#navbar .navbar .sidebar .hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25px;
+  cursor: pointer;
+  position: absolute;
+  right: 2%;
+  top: -30px;
+  z-index: 3;
+}
+#navbar .navbar .sidebar .hamburger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: whitesmoke;
+  border-radius: 36px;
+  transition: 0.7s;
+}
+#navbar .navbar .sidebar .hamburger .line1 {
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+#navbar .navbar .sidebar .hamburger .line3 {
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+#navbar .navbar .sidebar .hamburger span.show1 {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: white;
+}
+#navbar .navbar .sidebar .hamburger span.show3 {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  -webkit-transform: rotate(-45deg) translate(0, 0);
+  transform: rotate(-45deg) translate(0, 0);
+  background-color: white;
+}
+#navbar .navbar .sidebar .hamburger span.show2 {
+  opacity: 0;
+  transition: all 0.7s;
+}
+@media (min-width: 992px) {
+  #navbar .navbar {
+    background: transparent;
+  }
+  #navbar .navbar .logo img {
+    display: none;
+  }
+  #navbar .navbar .links {
+    display: flex;
+  }
+  #navbar .navbar .sidebar .hamburger {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
