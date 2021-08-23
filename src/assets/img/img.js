@@ -1,14 +1,14 @@
-import BG1 from "./BG1.png";
-import BG2 from "./BG2.png";
-import BG3 from "./BG3.png";
-import BG4 from "./BG4.png";
-import BG5 from "./BG5.png";
-import Jumbo_portfolio from ". Jumbo_portfolio.png";
-import Jumbo_contact from ". Jumbo_contact.png";
-import Jumbo_about from ". Jumbo_about.png";
-import Thumbail1 from "./thumbail1.png";
-import Thumbail2 from "./thumbail2.png";
-import Thumbail3 from "./thumbail3.png";
+import BG1 from "./BG1.jpg";
+import BG2 from "./BG2.jpg";
+import BG3 from "./BG3.jpg";
+import BG4 from "./BG4.jpg";
+import BG5 from "./BG5.jpg";
+import Jumbo_portfolio from "./Jumbo_portfolio.jpg";
+import Jumbo_contact from "./Jumbo_contact.jpg";
+import Jumbo_about from "./Jumbo_about.jpg";
+import Thumbail1 from "./thumbnail1.jpg";
+import Thumbail2 from "./thumbnail2.jpg";
+import Thumbail3 from "./thumbnail3.jpg";
 
 export {
   BG1,

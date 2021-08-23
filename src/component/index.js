@@ -1,3 +1,3 @@
 import Navbar from "./Navbar";
-
-export { Navbar };
+import JumbotronHome from "./JumbotronHome";
+export { Navbar, JumbotronHome };
