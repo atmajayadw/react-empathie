@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap");
 body {
   font-family: "Noto Sans", sans-serif;
   background-color: #171717;
@@ -154,6 +155,36 @@ body {
   }
   #slideshow #carousel {
     display: none;
+  }
+}
+
+#jumbotron-portfolio .jumbotron {
+  margin-top: 30px;
+  background-color: #171717;
+  background-image: url("../assets/img/Jumbo_portfolio.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position-x: 50%;
+}
+#jumbotron-portfolio .jumbotron .row {
+  display: flex;
+}
+#jumbotron-portfolio .jumbotron .row h1 {
+  font-family: "Noto Sans JP", sans-serif;
+  color: whitesmoke;
+  font-weight: 100;
+  font-size: 36px;
+  letter-spacing: 20px;
+  margin: auto;
+  margin-top: 70px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+  #jumbotron-portfolio .jumbotron {
+    margin-top: 0px;
+  }
+  #jumbotron-portfolio .jumbotron .row h1 {
+    font-size: 24px;
   }
 }
 

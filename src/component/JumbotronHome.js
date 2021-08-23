@@ -23,19 +23,39 @@ export default class JumbotronHome extends Component {
           </ol>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img className="d-block vh-100" src={BG1} alt="First slide" />
+              <img
+                className="d-block min-vh-100 min-vw-100"
+                src={BG1}
+                alt="First slide"
+              />
             </div>
             <div className="carousel-item">
-              <img className="d-block vh-100" src={BG2} alt="Second slide" />
+              <img
+                className="d-block min-vh-100 min-vw-100"
+                src={BG2}
+                alt="Second slide"
+              />
             </div>
             <div className="carousel-item">
-              <img className="d-block vh-100" src={BG3} alt="Third slide" />
+              <img
+                className="d-block min-vh-100 min-vw-100"
+                src={BG3}
+                alt="Third slide"
+              />
             </div>
             <div className="carousel-item">
-              <img className="d-block vh-100" src={BG4} alt="Fourth slide" />
+              <img
+                className="d-block min-vh-100 min-vw-100"
+                src={BG4}
+                alt="Fourth slide"
+              />
             </div>
             <div className="carousel-item">
-              <img className="d-block vh-100" src={BG5} alt="Fifth slide" />
+              <img
+                className="d-block min-vh-100 min-vw-100"
+                src={BG5}
+                alt="Fifth slide"
+              />
             </div>
           </div>
           <a

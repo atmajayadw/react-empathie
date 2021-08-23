@@ -1,0 +1,38 @@
+@use 'setup';
+
+#jumbotron-portfolio {
+  .jumbotron {
+    margin-top: 30px;
+    background-color: setup.$primaryColor;
+    background-image: url("../assets/img/Jumbo_portfolio.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-position-x: 50%;
+
+    .row {
+      display: flex;
+
+      h1 {
+        font-family: "Noto Sans JP", sans-serif;
+        color: whitesmoke;
+        font-weight: 100;
+        font-size: 36px;
+        letter-spacing: 20px;
+        margin: auto;
+        margin-top: 70px;
+        text-shadow: 2px 2px 8px rgba($color: #000000, $alpha: 0.3);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .jumbotron {
+      margin-top: 0px;
+      .row {
+        h1 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
