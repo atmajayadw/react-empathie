@@ -188,4 +188,50 @@ body {
   }
 }
 
+#menus {
+  margin-top: -80px;
+}
+#menus .menus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#menus .menus .menu {
+  width: 360px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#menus .menus .menu img {
+  width: 100%;
+}
+#menus .menus .menu .btn-menu {
+  background-color: #2f2f2f;
+  color: white;
+  width: 270px;
+  height: 52px;
+  border: 1px solid white;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+@media (max-width: 576px) {
+  #menus {
+    margin-top: -140px;
+  }
+  #menus .categories .category {
+    margin-top: 60px;
+    width: 320px;
+    height: 400px;
+  }
+}
+#menus hr {
+  margin: 80px 0;
+  height: 1px;
+  background-color: #454545;
+}
+
 /*# sourceMappingURL=main.css.map */

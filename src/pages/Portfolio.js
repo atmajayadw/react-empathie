@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { Navbar, JumbotronPortfolio } from "../component/index";
+import { Navbar } from "../component/index";
+import JumbotronPortfolio from "../component/portfolio/JumbotronPortfolio";
+import Menu from "../component/portfolio/Menu";
 
 export default class Portfolio extends Component {
   render() {
@@ -7,6 +9,7 @@ export default class Portfolio extends Component {
       <section id="portfolio">
         <Navbar />
         <JumbotronPortfolio />
+        <Menu />
       </section>
     );
   }

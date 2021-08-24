@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Jumbo_portfolio } from "../assets/img/img.js";
+// import { Jumbo_portfolio } from "../assets/img/img.js";
 
 export default class JumbotronPortfolio extends Component {
   render() {
