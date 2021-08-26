@@ -229,9 +229,49 @@ body {
   }
 }
 #menus hr {
-  margin: 80px 0;
+  margin-top: 60px;
+  margin-bottom: 30px;
   height: 1px;
   background-color: #454545;
+}
+
+#category .category-panel .row {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#category .category-panel .row h2 {
+  color: white;
+  letter-spacing: 5px;
+}
+#category .category-panel .row h6 {
+  transition: 0.5s;
+  color: white;
+  cursor: pointer;
+}
+#category .category-panel .row h6:hover {
+  color: #ababab;
+}
+#category .category-panel .contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#category .category-panel .contents .content {
+  width: 480px;
+  margin-top: 40px;
+}
+#category .category-panel .contents .content h3 {
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.5s;
+  color: white;
+  cursor: pointer;
+}
+#category .category-panel .contents .content h3:hover {
+  color: #ababab;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,45 @@
+@use 'setup';
+
+#category {
+  .category-panel {
+    .row {
+      padding: 0 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h2 {
+        color: white;
+        letter-spacing: 5px;
+      }
+      h6 {
+        transition: 0.5s;
+        color: white;
+        cursor: pointer;
+        &:hover {
+          color: #ababab;
+        }
+      }
+    }
+
+    .contents {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .content {
+        width: 480px;
+        margin-top: 40px;
+        h3 {
+          margin-top: 10px;
+          text-align: center;
+          text-decoration: none;
+          transition: 0.5s;
+          color: white;
+          cursor: pointer;
+          &:hover {
+            color: #ababab;
+          }
+        }
+      }
+    }
+  }
+}
