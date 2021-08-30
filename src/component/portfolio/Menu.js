@@ -57,7 +57,7 @@ export default class Menu extends Component {
   closePanel = () => {
     $("html, body").animate(
       {
-        scrollTop: $(".menus").offset().top - 130,
+        scrollTop: $(".menus").offset().top - 250,
       },
       1000,
       "easeInOutExpo"

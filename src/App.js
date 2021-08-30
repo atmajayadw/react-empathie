@@ -1,10 +1,6 @@
-import React, { Component } from 'react'
-import {Home, About, Portfolio, Contact} from './pages/index.js'
-import {
-  Switch,
-  Route,
-  BrowserRouter
-} from "react-router-dom"
+import React, { Component } from "react";
+import { Home, About, Portfolio, Contact, Client } from "./pages/index.js";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 
 export default class App extends Component {
   render() {
@@ -16,10 +12,10 @@ export default class App extends Component {
             <Route path="/portfolio" component={Portfolio} exact />
             <Route path="/contact" component={Contact} exact />
             <Route path="/about" component={About} exact />
-            {/* <Route path="/portfolio/content" component={Content} exact /> */}
+            <Route path="/portfolio/client" component={Client} exact />
           </Switch>
         </BrowserRouter>
       </>
-    )
+    );
   }
 }

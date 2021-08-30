@@ -28,15 +28,49 @@
       .content {
         width: 480px;
         margin-top: 40px;
-        h3 {
-          margin-top: 10px;
-          text-align: center;
-          text-decoration: none;
+
+        .thumbnail {
+          opacity: 1;
           transition: 0.5s;
-          color: white;
-          cursor: pointer;
           &:hover {
-            color: #ababab;
+            opacity: 0.5;
+          }
+        }
+
+        .btn-detail {
+          text-decoration: none;
+          h3 {
+            margin-top: 10px;
+            text-align: center;
+            transition: 0.5s;
+            color: white;
+            cursor: pointer;
+            &:hover {
+              color: #ababab;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 575.8px) {
+    .category-panel {
+      .row {
+        display: block;
+        padding: 0 20px;
+        margin-bottom: -10px;
+        h6 {
+          display: none;
+        }
+      }
+
+      .contents {
+        .content {
+          .btn-detail {
+            h3 {
+              font-size: 1.3rem;
+            }
           }
         }
       }

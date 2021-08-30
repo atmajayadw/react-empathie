@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default class Category extends Component {
   render() {
@@ -15,15 +15,35 @@ export default class Category extends Component {
             <div className="contents">
               {categories.map((category, index) => (
                 <div className="content" key={index}>
-                  <img
-                    src={
-                      "https://jjphoto-rest-server.atmajayadw.site/uploads/thumbnail/" +
-                      category.thumbnail
-                    }
-                    alt={category.thumbnail}
-                    className="img-fluid"
-                  />
-                  <h3>{category.client}</h3>
+                  <Link
+                    to={{
+                      pathname: "/portfolio/client/",
+                      search: "?id=" + category.client_id,
+                      state: category.category,
+                    }}
+                    rel="noopenner noreferrer"
+                  >
+                    <img
+                      src={
+                        "https://jjphoto-rest-server.atmajayadw.site/uploads/thumbnail/" +
+                        category.thumbnail
+                      }
+                      alt={category.thumbnail}
+                      className="img-fluid thumbnail"
+                    />
+                  </Link>
+
+                  <Link
+                    to={{
+                      pathname: "/portfolio/client/",
+                      search: "?id=" + category.client_id,
+                      state: category.category,
+                    }}
+                    rel="noopenner noreferrer"
+                    className="btn-detail"
+                  >
+                    <h3>{category.client}</h3>
+                  </Link>
                 </div>
               ))}
             </div>
