@@ -427,4 +427,71 @@ body {
   color: white;
 }
 
+#jumbotron-contact .jumbotron {
+  margin-top: 30px;
+  background-color: #171717;
+  background-image: url("../assets/img/Jumbo_contact.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position-x: 50%;
+}
+#jumbotron-contact .row {
+  display: flex;
+}
+#jumbotron-contact .row h1 {
+  font-family: "Noto Sans JP", sans-serif;
+  color: whitesmoke;
+  font-weight: 100;
+  font-size: 36px;
+  letter-spacing: 20px;
+  margin: auto;
+  margin-top: 70px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    margin-top: 0px;
+  }
+  .jumbotron .row h1 {
+    font-size: 24px;
+  }
+}
+#contacts {
+  margin-top: -80px;
+}
+#contacts .container {
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #2f2f2f;
+  padding: 50px 30px;
+}
+#contacts .container .contact {
+  width: 186px;
+  height: 100px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#contacts .container .contact img {
+  width: 60px;
+}
+#contacts .container .contact h4 {
+  color: white;
+  font-size: 1em;
+}
+@media (max-width: 576px) {
+  #contacts {
+    margin-top: -120px;
+  }
+  #contacts .container {
+    width: 320px;
+    padding: 0px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
