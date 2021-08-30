@@ -1,6 +1,8 @@
 @use 'navbar';
-@use 'jumbotronHome';
-@use 'portfolio';
-@use 'menu';
-@use 'category';
-@use 'client';
+@use 'Home/jumbotronHome';
+@use 'Portfolio/portfolio';
+@use 'Portfolio/menu';
+@use 'Portfolio/category';
+@use 'Portfolio/client';
+@use 'About/jumbotronAbout';
+@use 'About/description';

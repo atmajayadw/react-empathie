@@ -370,4 +370,61 @@ body {
   max-width: 700px;
 }
 
+#jumbotron-about .jumbotron {
+  margin-top: 30px;
+  background-color: #171717;
+  background-image: url("../assets/img/Jumbo_about.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position-x: 40%;
+}
+#jumbotron-about .jumbotron .row {
+  display: flex;
+}
+#jumbotron-about .jumbotron .row h1 {
+  font-family: "Noto Sans JP", sans-serif;
+  color: whitesmoke;
+  font-weight: 100;
+  font-size: 36px;
+  letter-spacing: 20px;
+  margin: auto;
+  margin-top: 70px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+  #jumbotron-about .jumbotron {
+    margin-top: 0px;
+  }
+  #jumbotron-about .jumbotron .row h1 {
+    font-size: 24px;
+  }
+}
+
+#about .container {
+  margin-top: -80px;
+}
+#about .container .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#about .container .row .logo {
+  width: 480px;
+}
+#about .container .row .logo img {
+  width: 100%;
+}
+#about .container .row .description {
+  background-color: #2f2f2f;
+  padding: 30px;
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+}
+#about .container .row .description p {
+  margin: auto;
+  font-family: "Rokkitt", serif;
+  color: white;
+}
+
 /*# sourceMappingURL=main.css.map */

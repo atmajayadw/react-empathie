@@ -1,13 +1,14 @@
-@use 'setup';
+@use '../setup';
 
-#jumbotron-portfolio {
+#jumbotron-about {
   .jumbotron {
     margin-top: 30px;
     background-color: setup.$primaryColor;
-    background-image: url("../assets/img/Jumbo_portfolio.jpg");
+    background-image: url("../assets/img/Jumbo_about.jpg");
     background-size: cover;
     height: 100vh;
-    background-position-x: 50%;
+    // background-position-y: -80px;
+    background-position-x: 40%;
 
     .row {
       display: flex;

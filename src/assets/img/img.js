@@ -9,7 +9,7 @@ import Jumbo_about from "./Jumbo_about.jpg";
 import Thumbail1 from "./thumbnail1.jpg";
 import Thumbail2 from "./thumbnail2.jpg";
 import Thumbail3 from "./thumbnail3.jpg";
-
+import Logo from "./empathielogo.png";
 export {
   BG1,
   BG2,
@@ -22,4 +22,5 @@ export {
   Thumbail1,
   Thumbail2,
   Thumbail3,
+  Logo,
 };

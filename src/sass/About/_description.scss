@@ -1,0 +1,30 @@
+@use '../setup';
+
+#about {
+  .container {
+    margin-top: -80px;
+    .row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      .logo {
+        width: 480px;
+        img {
+          width: 100%;
+        }
+      }
+      .description {
+        background-color: #2f2f2f;
+        padding: 30px;
+        width: 480px;
+        display: flex;
+        flex-direction: column;
+        p {
+          margin: auto;
+          font-family: "Rokkitt", serif;
+          color: white;
+        }
+      }
+    }
+  }
+}

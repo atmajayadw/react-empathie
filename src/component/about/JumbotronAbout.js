@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 
-export default class JumbotronPortfolio extends Component {
+export default class JumbotronAbout extends Component {
   render() {
     return (
-      <section id="jumbotron-portfolio">
+      <section id="jumbotron-about">
         <div className="container jumbotron">
           <div className="row">
-            <h1>PORTFOLIO</h1>
+            <h1>ABOUT</h1>
           </div>
         </div>
       </section>
