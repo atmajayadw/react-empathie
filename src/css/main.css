@@ -43,6 +43,13 @@ body {
   line-height: 100px;
   text-decoration: none;
   color: whitesmoke;
+  transition: 0.5s;
+}
+#navbar .navbar .links ul li a:hover {
+  color: #2f2f2f;
+}
+#navbar .navbar .links ul li .link.active {
+  color: rgba(171, 171, 171, 0.5);
 }
 #navbar .navbar .sidebar {
   position: relative;
@@ -346,6 +353,8 @@ body {
 }
 
 #client {
+  opacity: 0;
+  transition: 1s;
   padding: 50px 0;
 }
 #client .back {

@@ -1,6 +1,8 @@
 @use '../setup';
 
 #client {
+  opacity: 0;
+  transition: 1s;
   padding: 50px 0;
   .back {
     text-decoration: none;

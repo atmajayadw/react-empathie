@@ -37,6 +37,15 @@
             line-height: 100px;
             text-decoration: none;
             color: whitesmoke;
+            transition: 0.5s;
+
+            &:hover {
+              color: #2f2f2f;
+            }
+          }
+
+          .link.active {
+            color: rgba(171, 171, 171, 0.5);
           }
         }
       }
