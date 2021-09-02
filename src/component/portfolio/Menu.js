@@ -44,7 +44,6 @@ export default class Menu extends Component {
 
   showPanel = () => {
     const panel = $(".category-panel");
-    console.log(panel);
     $("html, body").animate(
       {
         scrollTop: panel.offset().top - 80,

@@ -1,11 +1,22 @@
 import React, { Component } from "react";
 import { Logo } from "../assets/icons/icons.js";
-import { HashLink as Link } from "react-router-hash-link";
+import { NavLink } from "react-router-dom";
 
 export default class Navbar extends Component {
   componentDidMount() {
     this.hamburger();
+    this.customNav();
   }
+
+  customNav = () => {
+    const link = document.querySelector(".link.home");
+    const navbar = document.querySelector(".navbar .links");
+    if (link.classList.contains("active")) {
+      navbar.style.background = "rgba(171,171,171, 0.1";
+    } else {
+      navbar.style.background = "transparent";
+    }
+  };
 
   hamburger = () => {
     const hamburger = document.querySelector(".hamburger");
@@ -25,6 +36,12 @@ export default class Navbar extends Component {
     });
   };
 
+  deactivateSidebar = () => {
+    const sidebar = document.querySelector(".sidebar .links");
+    sidebar.classList.remove("active");
+    document.body.style.overflow = "auto";
+  };
+
   render() {
     return (
       <section id="navbar">
@@ -37,20 +54,21 @@ export default class Navbar extends Component {
             <div className="links">
               <ul>
                 <li>
-                  <Link
+                  <NavLink
                     className="link home"
                     rel="noopenner noreferrer"
                     to={{
                       pathname: "/",
                       params: "#home",
                     }}
+                    exact
                   >
                     {" "}
                     <span>Home</span>
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link
+                  <NavLink
                     className="link portfolio"
                     rel="noopenner noreferrer"
                     to={{
@@ -59,13 +77,13 @@ export default class Navbar extends Component {
                   >
                     {" "}
                     <span>Portfolio</span>
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
                   <img id="logo" src={Logo} alt=""></img>
                 </li>
                 <li>
-                  <Link
+                  <NavLink
                     className="link about"
                     rel="noopenner noreferrer"
                     to={{
@@ -74,10 +92,10 @@ export default class Navbar extends Component {
                   >
                     {" "}
                     <span>About</span>
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link
+                  <NavLink
                     className="link contact"
                     rel="noopenner noreferrer"
                     to={{
@@ -86,7 +104,7 @@ export default class Navbar extends Component {
                   >
                     {" "}
                     <span>Contact</span>
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </div>
@@ -101,53 +119,57 @@ export default class Navbar extends Component {
               <div className="links">
                 <ul>
                   <li>
-                    <Link
+                    <NavLink
                       className="link home"
                       rel="noopenner noreferrer"
                       to={{
                         pathname: "/",
                         params: "#home",
                       }}
+                      onClick={this.deactivateSidebar}
                     >
                       {" "}
                       <span>Home</span>
-                    </Link>
+                    </NavLink>
                   </li>
                   <li>
-                    <Link
+                    <NavLink
                       className="link portfolio"
                       rel="noopenner noreferrer"
                       to={{
                         pathname: "/portfolio",
                       }}
+                      onClick={this.deactivateSidebar}
                     >
                       {" "}
                       <span>Portfolio</span>
-                    </Link>
+                    </NavLink>
                   </li>
                   <li>
-                    <Link
+                    <NavLink
                       className="link about"
                       rel="noopenner noreferrer"
                       to={{
                         pathname: "/about",
                       }}
+                      onClick={this.deactivateSidebar}
                     >
                       {" "}
                       <span>About</span>
-                    </Link>
+                    </NavLink>
                   </li>
                   <li>
-                    <Link
+                    <NavLink
                       className="link contact"
                       rel="noopenner noreferrer"
                       to={{
                         pathname: "/contact",
                       }}
+                      onClick={this.deactivateSidebar}
                     >
                       {" "}
                       <span>Contact</span>
-                    </Link>
+                    </NavLink>
                   </li>
                 </ul>
               </div>

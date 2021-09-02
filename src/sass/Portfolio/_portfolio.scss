@@ -1,6 +1,9 @@
 @use '../setup';
 
 #jumbotron-portfolio {
+  opacity: 0;
+  position: relative;
+  transition: 1s;
   .jumbotron {
     margin-top: 30px;
     background-color: setup.$primaryColor;
