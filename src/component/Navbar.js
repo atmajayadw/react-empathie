@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Logo } from "../assets/icons/icons.js";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 export default class Navbar extends Component {
   componentDidMount() {
@@ -48,7 +48,9 @@ export default class Navbar extends Component {
         <div className="container">
           <div className="row navbar">
             <div className="logo">
-              <img src={Logo} alt=""></img>
+              <Link to={"/"}>
+                <img src={Logo} alt=""></img>
+              </Link>
             </div>
 
             <div className="links">
@@ -74,6 +76,7 @@ export default class Navbar extends Component {
                     to={{
                       pathname: "/portfolio",
                     }}
+                    exact
                   >
                     {" "}
                     <span>Portfolio</span>
@@ -89,6 +92,7 @@ export default class Navbar extends Component {
                     to={{
                       pathname: "/about",
                     }}
+                    exact
                   >
                     {" "}
                     <span>About</span>
@@ -101,6 +105,7 @@ export default class Navbar extends Component {
                     to={{
                       pathname: "/contact",
                     }}
+                    exact
                   >
                     {" "}
                     <span>Contact</span>
@@ -127,6 +132,7 @@ export default class Navbar extends Component {
                         params: "#home",
                       }}
                       onClick={this.deactivateSidebar}
+                      exact
                     >
                       {" "}
                       <span>Home</span>
@@ -140,6 +146,7 @@ export default class Navbar extends Component {
                         pathname: "/portfolio",
                       }}
                       onClick={this.deactivateSidebar}
+                      exact
                     >
                       {" "}
                       <span>Portfolio</span>
@@ -153,6 +160,7 @@ export default class Navbar extends Component {
                         pathname: "/about",
                       }}
                       onClick={this.deactivateSidebar}
+                      exact
                     >
                       {" "}
                       <span>About</span>
@@ -166,6 +174,7 @@ export default class Navbar extends Component {
                         pathname: "/contact",
                       }}
                       onClick={this.deactivateSidebar}
+                      exact
                     >
                       {" "}
                       <span>Contact</span>

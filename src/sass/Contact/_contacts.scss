@@ -1,7 +1,6 @@
-@use '../setup';
+@use "../setup";
 
 #contacts {
-  margin-top: -80px;
   .container {
     width: 960px;
     display: flex;
@@ -30,7 +29,6 @@
   }
 
   @media (max-width: 576px) {
-    margin-top: -120px;
     .container {
       width: 320px;
       padding: 0px;

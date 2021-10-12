@@ -51,13 +51,12 @@ export default class Client extends Component {
     const authResult = new URLSearchParams(window.location.search);
     const code = authResult.get("id");
 
-    const URL = "https://jjphoto-rest-server.atmajayadw.site/api/portfolio/";
+    const URL = "https://empathie-rest-server.empathiephoto.com/api/portfolio/";
     axios
       .get(URL, { params: { client_id: code } })
       .then((res) => {
         const result = res.data;
         this.setState({ result: result.data });
-        console.log(this.state.result);
       })
       .catch((error) => {
         console.log(error);
@@ -77,7 +76,7 @@ export default class Client extends Component {
         modal.style.display = "block";
         fixbar.style.display = "none";
         modal_img.src =
-          "https://jjphoto-rest-server.atmajayadw.site/uploads/" + this.alt;
+          "https://empathie-rest-server.empathiephoto.com/uploads/" + this.alt;
         if ($("#modal-img").height() > 500) {
           $("#modal-img").css({
             "max-width": "400px",
@@ -144,7 +143,7 @@ export default class Client extends Component {
                 <div className="client" key={index}>
                   <img
                     src={
-                      "https://jjphoto-rest-server.atmajayadw.site/uploads/" +
+                      "https://empathie-rest-server.empathiephoto.com/uploads/" +
                       res.photo
                     }
                     alt={res.photo}

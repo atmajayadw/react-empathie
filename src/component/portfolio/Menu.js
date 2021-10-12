@@ -26,7 +26,7 @@ export default class Menu extends Component {
       category: category,
     });
 
-    const URL = "https://jjphoto-rest-server.atmajayadw.site/api/client/";
+    const URL = "https://empathie-rest-server.empathiephoto.com/api/client/";
     axios
       .get(URL, { params: { category: category } })
       .then((res) => {

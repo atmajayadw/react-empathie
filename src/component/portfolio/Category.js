@@ -25,7 +25,7 @@ export default class Category extends Component {
                   >
                     <img
                       src={
-                        "https://jjphoto-rest-server.atmajayadw.site/uploads/thumbnail/" +
+                        "https://empathie-rest-server.empathiephoto.com/uploads/thumbnail/" +
                         category.thumbnail
                       }
                       alt={category.thumbnail}

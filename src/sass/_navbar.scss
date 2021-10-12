@@ -1,4 +1,4 @@
-@use 'setup';
+@use "setup";
 
 #navbar {
   margin-top: 20px;
@@ -15,7 +15,6 @@
     }
 
     .links {
-      // background: rgba(#ababab, 0.1);
       width: 700px;
       height: 80px;
       padding: 0;
@@ -80,6 +79,11 @@
           padding: 40px 0;
           background: rgba(#ababab, 1);
           height: 100vh;
+          li {
+            .link.active {
+              color: rgba(0, 0, 0, 0.5);
+            }
+          }
         }
       }
 
