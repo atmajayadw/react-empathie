@@ -22,14 +22,16 @@ export default class Category extends Component {
                       state: category.category,
                     }}
                     rel="noopenner noreferrer"
+                    className="thumbnail"
                   >
                     <img
                       src={
-                        "https://empathie-rest-server.empathiephoto.com/uploads/thumbnail/" +
+                        "https://empathie-rest-server.empathiephoto.site/uploads/thumbnail/" +
+                        // "http://localhost/empathie-rest-server/uploads/thumbnail/" +
                         category.thumbnail
                       }
                       alt={category.thumbnail}
-                      className="img-fluid thumbnail"
+                      className="img-fluid"
                     />
                   </Link>
 

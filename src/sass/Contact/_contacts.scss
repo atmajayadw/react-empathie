@@ -2,6 +2,7 @@
 
 #contacts {
   .container {
+    margin-top: -80px;
     width: 960px;
     display: flex;
     flex-wrap: wrap;
@@ -16,7 +17,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-
+      text-decoration: none;
       img {
         width: 60px;
       }
@@ -24,6 +25,15 @@
       h4 {
         color: white;
         font-size: 1em;
+        transition: 0.5s;
+      }
+
+      &.link {
+        &:hover {
+          h4 {
+            color: black;
+          }
+        }
       }
     }
   }

@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -120px;
+  margin-top: -130px;
   opacity: 0;
   transition: 1s;
   height: 100vh;
@@ -24,22 +24,45 @@
     }
   }
 
-  .btn-explore {
+  .buttons {
+    width: 360px;
     z-index: 5;
     margin-top: -100px;
-    width: 200px;
-    border: 1px solid white;
-    background-color: #2f2f2f;
-    cursor: pointer;
-    transition: 0.3s;
-    span {
-      color: white;
+    display: flex;
+    justify-content: space-around;
+    .btn-explore {
+      width: 160px;
+      border: 1px solid white;
+      background-color: #2f2f2f;
+      cursor: pointer;
+      transition: 0.3s;
+      span {
+        color: white;
+      }
+
+      &:hover {
+        background-color: whitesmoke;
+        span {
+          color: #2f2f2f;
+        }
+      }
     }
 
-    &:hover {
-      background-color: whitesmoke;
+    .btn-contact {
+      width: 160px;
+      border: 1px solid white;
+      background-color: #2f2f2f;
+      cursor: pointer;
+      transition: 0.3s;
       span {
-        color: #2f2f2f;
+        color: white;
+      }
+
+      &:hover {
+        background-color: whitesmoke;
+        span {
+          color: #2f2f2f;
+        }
       }
     }
   }
@@ -60,9 +83,18 @@
       display: none;
     }
 
-    .btn-explore {
-      margin-bottom: -600px;
-      // position: relative;
+    .buttons {
+      position: relative;
+      margin-top: 450px;
+      justify-content: center;
+      .btn-contact {
+        margin-left: 10px;
+        width: 140px;
+      }
+      .btn-explore {
+        width: 140px;
+        margin-right: 10px;
+      }
     }
   }
 }

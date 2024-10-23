@@ -1,11 +1,8 @@
-@use 'setup';
+@use "setup";
 
 #loader {
   background-color: rgba(171, 171, 171, 0.1);
   border-radius: 10px;
-}
-
-#loader.container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -15,20 +12,43 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  p {
+    text-align: center;
+    margin-top: -40px;
+    font-size: 12px;
+    color: white;
+  }
+
+  .divLoader {
+    transform: scale(0.5);
+    margin-top: -30px;
+  }
 }
 
-#loader p {
-  text-align: center;
-  margin-top: -40px;
-  font-size: 12px;
-  color: white;
-}
+#loader2 {
+  background-color: #2f2f2f;
+  border-radius: 10px;
+  width: 120px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 15;
 
-#loader .divLoader {
-  transform: scale(0.5);
-  margin-top: -30px;
-}
+  .divLoader {
+    transform: scale(0.5);
+    margin-top: -30px;
+  }
 
-#loader {
-  display: flex;
+  p {
+    text-align: center;
+    margin-top: -40px;
+    font-size: 12px;
+    color: white;
+  }
 }

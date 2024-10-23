@@ -127,16 +127,30 @@ export default class JumbotronHome extends Component {
             </div>
           </div>
 
-          <NavLink
-            className="btn btn-explore"
-            rel="noopenner noreferrer"
-            to={{
-              pathname: "/portfolio",
-            }}
-          >
-            {" "}
-            <span>More Portfolio</span>
-          </NavLink>
+          <div className="buttons">
+            <NavLink
+              className="btn btn-explore"
+              rel="noopenner noreferrer"
+              to={{
+                pathname: "/portfolio",
+              }}
+            >
+              {" "}
+              <span>More Portfolio</span>
+            </NavLink>
+            <NavLink
+              className="btn btn-contact"
+              rel="noopenner noreferrer"
+              to={{
+                pathname:
+                  "https://api.whatsapp.com/send?phone=628561669961&text=Halo,%20Empathie.photo!%20Boleh%20minta%20pricelistnya?",
+              }}
+              target="_blank"
+            >
+              {" "}
+              <span>Contact Us</span>
+            </NavLink>
+          </div>
         </section>
       </>
     );
